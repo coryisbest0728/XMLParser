@@ -14,7 +14,7 @@ export class NormalXMLParser implements IXMLParser {
      * @param xmlString
      * @return {Promise<Document>}
      */
-    parse(xmlString: string): Promise<Document> {
+    public parse(xmlString: string): Promise<Document> {
         let domParser: DOMParser = new DOMParser();
         let doc: Document = domParser.parseFromString(
             xmlString.replace(/[\t\r\n]/g, '').replace(/\>\s*\</g, '><'), 'text/xml');

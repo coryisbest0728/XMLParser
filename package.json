@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "realese": "webpack",
-    "test": "karma start",
-    "postinstall": "npm install"
+    "test": "karma start"
   },
   "repository": {
     "type": "git",
