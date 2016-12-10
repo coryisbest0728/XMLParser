@@ -13,21 +13,29 @@ module.exports = {
         filename: '[name].js',
         chunkFilename: '[name].js'
     },
+
+    // Enable sourcemaps for debugging webpack's output.
+    devtool: "source-map",
+
     plugins: [
         new CleanWebpackPlugin([ path.resolve(__dirname, './dist') ])
     ],
+
     resolve: {
+        root: [
+            path.resolve('./src'),
+            path.resolve('./tests')
+        ],
         extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js', '.scss']
     },
+
     module: {
         loaders: [{ // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
             test: /\.tsx?$/,
             include: [
                 path.resolve(__dirname, './src'),
-                path.resolve(__dirname, './tests')
-            ],
-            exclude: [
-                path.resolve(__dirname, './node_modules')
+                path.resolve(__dirname, './tests'),
+                path.resolve(__dirname, './node_modules/@types')
             ],
             loader: "awesome-typescript-loader"
         }],
@@ -36,9 +44,6 @@ module.exports = {
             include: [
                 path.resolve(__dirname, './src'),
                 path.resolve(__dirname, './tests')
-            ],
-            exclude: [
-                path.resolve(__dirname, './node_modules')
             ],
             loader: "source-map-loader"
         }]
