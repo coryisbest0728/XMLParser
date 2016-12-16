@@ -37,6 +37,10 @@ module.exports = function(config) {
             resolve: webpackConfig.resolve
         },
 
+        mime: {
+            'text/x-typescript': [ 'ts', 'tsx' ]
+        },
+
 
         // test results reporter to use
         // possible values: 'dots', 'progress'
