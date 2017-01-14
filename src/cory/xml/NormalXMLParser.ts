@@ -4,8 +4,7 @@
  * @author Cory(kuanghongrui@baijiahulian.com)
  */
 
-import { IXMLParser } from 'com/gsx/xml/IXMLParser';
-import { Promise } from 'es6-promise';
+import { IXMLParser } from 'cory/xml/IXMLParser';
 
 export class NormalXMLParser implements IXMLParser {
 

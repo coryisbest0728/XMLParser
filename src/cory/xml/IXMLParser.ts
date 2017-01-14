@@ -4,8 +4,6 @@
  * @author Cory(kuanghongrui@baijiahulian.com)
  */
 
-import { Promise } from 'es6-promise';
-
 export interface IXMLParser {
 
     /**
