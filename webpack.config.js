@@ -6,7 +6,7 @@ var postcssImport = require('postcss-import');
 
 module.exports = {
     entry: {
-
+        'cory/xml/NormalXMLParser': './src/cory/xml/NormalXMLParser.ts'
     },
     output: {
         path: path.resolve(__dirname, './dist'),
@@ -37,7 +37,7 @@ module.exports = {
                 path.resolve(__dirname, './tests'),
                 path.resolve(__dirname, './node_modules/@types')
             ],
-            loader: "awesome-typescript-loader"
+            loader: "ts-loader"
         }],
         preLoaders: [{ // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
             test: /\.js$/,

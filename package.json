@@ -2,9 +2,8 @@
   "name": "xmlparser",
   "version": "0.0.1",
   "description": "The high performance parser in XML",
-  "main": "index.js",
   "scripts": {
-    "realese": "webpack",
+    "release": "webpack",
     "test": "karma start"
   },
   "repository": {
@@ -28,7 +27,6 @@
     "@types/jasmine": "^2.5.38",
     "@types/node": "0.0.2",
     "autoprefixer": "^6.5.3",
-    "awesome-typescript-loader": "^3.0.0-beta.9",
     "clean-webpack-plugin": "^0.1.14",
     "jasmine": "^2.5.2",
     "karma": "^1.3.0",
@@ -39,11 +37,12 @@
     "karma-jasmine": "^1.0.2",
     "karma-requirejs": "^1.1.0",
     "karma-typescript-preprocessor2": "^1.2.1",
-    "karma-webpack": "^1.8.0",
+    "karma-webpack": "^1.8.1",
     "postcss-import": "^9.0.0",
     "precss": "^1.4.0",
     "requirejs": "^2.3.2",
     "source-map-loader": "^0.1.5",
+    "ts-loader": "^1.3.3",
     "typescript": "^2.1.4",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
