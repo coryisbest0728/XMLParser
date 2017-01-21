@@ -1,7 +1,7 @@
 /**
  * @file The interface of xml parser.
  *
- * @author Cory(kuanghongrui@baijiahulian.com)
+ * @author Cory(https://github.com/coryisbest0728)
  */
 
 export interface IXMLParser {

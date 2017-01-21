@@ -1,7 +1,7 @@
 /**
  * @file The normal xml parse.
  *
- * @author Cory(kuanghongrui@baijiahulian.com)
+ * @author Cory(https://github.com/coryisbest0728)
  */
 
 import { IXMLParser } from 'cory/xml/IXMLParser';
